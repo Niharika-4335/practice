@@ -10,6 +10,8 @@ public class QueueInterface{
         queue.add(9);
         System.out.println(queue.poll());
         System.out.println(queue.element());
+
+        
 //                Queue<Integer> queue = new PriorityQueue<>();
 //                queue.add(15);
 //                queue.add(5);
