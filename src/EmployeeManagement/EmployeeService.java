@@ -37,8 +37,6 @@ public class EmployeeService {
         Stream<Manager> stream=list.stream();
         stream.filter(emp->emp.getId().equals(id2)).forEach(m->m.setName("harika"));
 //        try {
-
-
 //            for(Manager m:list){
 //                if(m.getId()==id2){
 //                    m.setName("harika");
