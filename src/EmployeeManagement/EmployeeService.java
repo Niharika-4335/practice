@@ -17,6 +17,7 @@ public class EmployeeService {
         Integer salary1=sc.nextInt();
         Integer bonus1=sc.nextInt();
         list.add(new Manager(id1,name1,dept,salary1,bonus1));
+        System.out.println("--------------------------------");
 
     }
     public static void remove(List<Manager> list,Integer id1){
