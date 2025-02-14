@@ -1,7 +1,5 @@
 package Collections;
 
-import static sun.util.locale.LocaleUtils.isEmpty;
-
 public class CustomStack {
     Node head;
     class Node{

@@ -55,6 +55,16 @@ public class StreamOperations {
         );
         listOfLists.stream().flatMap(List::stream).collect(Collectors.toList());
 
+                List<String> names = List.of("Alice", "Bob", "Charlie");
+
+                Optional<String> anyName = names.stream().findAny();
+
+                anyName.ifPresent(name -> System.out.println(name));
+
+
+
+
+
 
 
 

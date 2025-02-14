@@ -60,7 +60,7 @@ public class EmployeeObjects {
         maxSalary(hashMap,list);
 //        grpbyDept(hashMap,list);
 
-    }
+    }//https://medium.com/@mehar.chand.cloud/java-stream-coding-interview-questions-part-1-dc39e3575727
     public static void getEmployee1(HashMap<Integer,Employee8> hashMap,List<Employee8>list,String a){
 //        for (Map.Entry<Integer,Employee8> entry : hashMap.entrySet()) {
 //            Employee8 emp=entry.getValue();
