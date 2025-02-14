@@ -47,7 +47,17 @@ public class StreamOperations {
         Map<String,List<Employee9>> map=list.stream().sorted(Comparator.comparing(Employee9::getSalary).reversed()).collect(Collectors.groupingBy(Employee9::getDept));
         System.out.println(map);
         List<Employee9> map1=list.stream().sorted(Comparator.comparing(Employee9::getSalary).reversed()).limit(2).toList();
-        System.out.print(map1);
+        System.out.print(map1);//query is to find out the maximum 2 records.
+        List<List<Integer>> listOfLists = Arrays.asList(
+                Arrays.asList(1, 2, 3),
+                Arrays.asList(4, 5),
+                Arrays.asList(6, 7, 8, 9)
+        );
+        listOfLists.stream().flatMap(List::stream).collect(Collectors.toList());
+
+
+
+
 
 
 
