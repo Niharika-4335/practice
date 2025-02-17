@@ -57,10 +57,10 @@ public class EmployeeObjects {
 //        getEmployee1(hashMap,list,"dev");
 //        getEmployee2(hashMap,list);
 //        findName(hashMap,list,"def");
-        maxSalary(hashMap,list);
-//        grpbyDept(hashMap,list);
+//        maxSalary(hashMap,list);
+        grpbyDept(list);
 
-    }//https://medium.com/@mehar.chand.cloud/java-stream-coding-interview-questions-part-1-dc39e3575727
+    }
     public static void getEmployee1(HashMap<Integer,Employee8> hashMap,List<Employee8>list,String a){
 //        for (Map.Entry<Integer,Employee8> entry : hashMap.entrySet()) {
 //            Employee8 emp=entry.getValue();
@@ -100,7 +100,7 @@ public class EmployeeObjects {
 
 
     }
-    public static void grpbyDept(HashMap<Integer,Employee8> hashMap,List<Employee8> list){
+    public static void grpbyDept(List<Employee8> list){
         Map<String, List<Employee8>> map = list.stream()
                 .collect(Collectors.groupingBy(Employee8::getDept));
         System.out.print(map);
