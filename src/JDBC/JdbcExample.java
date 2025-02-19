@@ -20,6 +20,8 @@ public class JdbcExample {
                 System.out.println(resultSet.getInt("id")+","+resultSet.getString("name")+","
                 +resultSet.getFloat("salary")+" "+resultSet.getString("dept"));
             }
+            statement.close();
+            statement1.close();
         conn.close();
         }
         catch(Exception e){
