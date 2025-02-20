@@ -30,12 +30,15 @@ public class Question1 {
 //        List<Integer> list2= list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toUnmodifiableList());
 //        System.out.println(list.stream().filter(i->i%2!=0).mapToInt(i->i).sum());
 //        list.stream().filter(i->list1.contains(i)).forEach(i-> System.out.println(i));
-        Integer a=4;
-        Integer b= list.indexOf(4);
-        Integer c=list.lastIndexOf(4);
-        System.out.println(b +" "+c);
-        List<Integer> list2=Stream.concat(list.stream(),list1.stream()).collect(Collectors.toUnmodifiableList());
-        System.out.println(list2);
+//        Integer a=4;
+//        Integer b= list.indexOf(4);
+//        Integer c=list.lastIndexOf(4);
+//        System.out.println(b +" "+c);
+//        List<Integer> list2=Stream.concat(list.stream(),list1.stream()).collect(Collectors.toUnmodifiableList());
+//        System.out.println(list2);
+        int max=list1.stream().mapToInt(i->i).max().getAsInt();
+        int min=list1.stream().mapToInt(i->i).min().getAsInt();
+        System.out.println(max-min);
 
 
     }
