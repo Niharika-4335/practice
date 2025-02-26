@@ -11,6 +11,9 @@ public class FindingDuplicates {
          Integer k=2;
       List<Integer> list= numbers.stream().distinct().sorted(Comparator.reverseOrder()).limit(k).skip(k-1).collect(Collectors.toUnmodifiableList());
         System.out.println(list);
+        String a="niharika";
+        String b="niharikaz";
+        System.out.println(a==b);
 
     }
 }
